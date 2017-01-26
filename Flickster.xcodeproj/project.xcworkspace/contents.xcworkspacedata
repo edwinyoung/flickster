@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:flickster.xcodeproj">
+      location = "self:Flickster.xcodeproj">
    </FileRef>
 </Workspace>

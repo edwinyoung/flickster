@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D970A4F71E3AA92D0068D026 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D970A4F61E3AA92D0068D026 /* AppDelegate.swift */; };
-		D970A4F91E3AA92D0068D026 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D970A4F81E3AA92D0068D026 /* ViewController.swift */; };
-		D970A4FC1E3AA92D0068D026 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D970A4FA1E3AA92D0068D026 /* Main.storyboard */; };
-		D970A4FE1E3AA92D0068D026 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D970A4FD1E3AA92D0068D026 /* Assets.xcassets */; };
-		D970A5011E3AA92D0068D026 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D970A4FF1E3AA92D0068D026 /* LaunchScreen.storyboard */; };
+		D92843A71E3AB821008E987D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92843A61E3AB821008E987D /* AppDelegate.swift */; };
+		D92843AC1E3AB821008E987D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D92843AA1E3AB821008E987D /* Main.storyboard */; };
+		D92843AE1E3AB821008E987D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D92843AD1E3AB821008E987D /* Assets.xcassets */; };
+		D92843B11E3AB821008E987D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D92843AF1E3AB821008E987D /* LaunchScreen.storyboard */; };
+		D92843B91E3AB845008E987D /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92843B81E3AB845008E987D /* MoviesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D970A4F31E3AA92D0068D026 /* flickster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flickster.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D970A4F61E3AA92D0068D026 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D970A4F81E3AA92D0068D026 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D970A4FB1E3AA92D0068D026 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D970A4FD1E3AA92D0068D026 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D970A5001E3AA92D0068D026 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D970A5021E3AA92D0068D026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D92843A31E3AB821008E987D /* Flickster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flickster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D92843A61E3AB821008E987D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D92843AB1E3AB821008E987D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D92843AD1E3AB821008E987D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D92843B01E3AB821008E987D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D92843B21E3AB821008E987D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D92843B81E3AB845008E987D /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D970A4F01E3AA92C0068D026 /* Frameworks */ = {
+		D92843A01E3AB821008E987D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,72 +35,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D970A4EA1E3AA92C0068D026 = {
+		D928439A1E3AB821008E987D = {
 			isa = PBXGroup;
 			children = (
-				D970A4F51E3AA92D0068D026 /* flickster */,
-				D970A4F41E3AA92D0068D026 /* Products */,
+				D92843A51E3AB821008E987D /* Flickster */,
+				D92843A41E3AB821008E987D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D970A4F41E3AA92D0068D026 /* Products */ = {
+		D92843A41E3AB821008E987D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D970A4F31E3AA92D0068D026 /* flickster.app */,
+				D92843A31E3AB821008E987D /* Flickster.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D970A4F51E3AA92D0068D026 /* flickster */ = {
+		D92843A51E3AB821008E987D /* Flickster */ = {
 			isa = PBXGroup;
 			children = (
-				D970A4F61E3AA92D0068D026 /* AppDelegate.swift */,
-				D970A4F81E3AA92D0068D026 /* ViewController.swift */,
-				D970A4FA1E3AA92D0068D026 /* Main.storyboard */,
-				D970A4FD1E3AA92D0068D026 /* Assets.xcassets */,
-				D970A4FF1E3AA92D0068D026 /* LaunchScreen.storyboard */,
-				D970A5021E3AA92D0068D026 /* Info.plist */,
+				D92843A61E3AB821008E987D /* AppDelegate.swift */,
+				D92843AA1E3AB821008E987D /* Main.storyboard */,
+				D92843AD1E3AB821008E987D /* Assets.xcassets */,
+				D92843AF1E3AB821008E987D /* LaunchScreen.storyboard */,
+				D92843B21E3AB821008E987D /* Info.plist */,
+				D92843B81E3AB845008E987D /* MoviesViewController.swift */,
 			);
-			path = flickster;
+			path = Flickster;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D970A4F21E3AA92C0068D026 /* flickster */ = {
+		D92843A21E3AB821008E987D /* Flickster */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D970A5051E3AA92D0068D026 /* Build configuration list for PBXNativeTarget "flickster" */;
+			buildConfigurationList = D92843B51E3AB821008E987D /* Build configuration list for PBXNativeTarget "Flickster" */;
 			buildPhases = (
-				D970A4EF1E3AA92C0068D026 /* Sources */,
-				D970A4F01E3AA92C0068D026 /* Frameworks */,
-				D970A4F11E3AA92C0068D026 /* Resources */,
+				D928439F1E3AB821008E987D /* Sources */,
+				D92843A01E3AB821008E987D /* Frameworks */,
+				D92843A11E3AB821008E987D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = flickster;
-			productName = flickster;
-			productReference = D970A4F31E3AA92D0068D026 /* flickster.app */;
+			name = Flickster;
+			productName = Flickster;
+			productReference = D92843A31E3AB821008E987D /* Flickster.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D970A4EB1E3AA92C0068D026 /* Project object */ = {
+		D928439B1E3AB821008E987D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Test Org Pls Ignore";
 				TargetAttributes = {
-					D970A4F21E3AA92C0068D026 = {
+					D92843A21E3AB821008E987D = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = D970A4EE1E3AA92C0068D026 /* Build configuration list for PBXProject "flickster" */;
+			buildConfigurationList = D928439E1E3AB821008E987D /* Build configuration list for PBXProject "Flickster" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -108,54 +108,54 @@
 				en,
 				Base,
 			);
-			mainGroup = D970A4EA1E3AA92C0068D026;
-			productRefGroup = D970A4F41E3AA92D0068D026 /* Products */;
+			mainGroup = D928439A1E3AB821008E987D;
+			productRefGroup = D92843A41E3AB821008E987D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D970A4F21E3AA92C0068D026 /* flickster */,
+				D92843A21E3AB821008E987D /* Flickster */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D970A4F11E3AA92C0068D026 /* Resources */ = {
+		D92843A11E3AB821008E987D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D970A5011E3AA92D0068D026 /* LaunchScreen.storyboard in Resources */,
-				D970A4FE1E3AA92D0068D026 /* Assets.xcassets in Resources */,
-				D970A4FC1E3AA92D0068D026 /* Main.storyboard in Resources */,
+				D92843B11E3AB821008E987D /* LaunchScreen.storyboard in Resources */,
+				D92843AE1E3AB821008E987D /* Assets.xcassets in Resources */,
+				D92843AC1E3AB821008E987D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D970A4EF1E3AA92C0068D026 /* Sources */ = {
+		D928439F1E3AB821008E987D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D970A4F91E3AA92D0068D026 /* ViewController.swift in Sources */,
-				D970A4F71E3AA92D0068D026 /* AppDelegate.swift in Sources */,
+				D92843A71E3AB821008E987D /* AppDelegate.swift in Sources */,
+				D92843B91E3AB845008E987D /* MoviesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D970A4FA1E3AA92D0068D026 /* Main.storyboard */ = {
+		D92843AA1E3AB821008E987D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D970A4FB1E3AA92D0068D026 /* Base */,
+				D92843AB1E3AB821008E987D /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		D970A4FF1E3AA92D0068D026 /* LaunchScreen.storyboard */ = {
+		D92843AF1E3AB821008E987D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D970A5001E3AA92D0068D026 /* Base */,
+				D92843B01E3AB821008E987D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -163,7 +163,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		D970A5031E3AA92D0068D026 /* Debug */ = {
+		D92843B31E3AB821008E987D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -212,7 +212,7 @@
 			};
 			name = Debug;
 		};
-		D970A5041E3AA92D0068D026 /* Release */ = {
+		D92843B41E3AB821008E987D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -254,27 +254,27 @@
 			};
 			name = Release;
 		};
-		D970A5061E3AA92D0068D026 /* Debug */ = {
+		D92843B61E3AB821008E987D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = flickster/Info.plist;
+				INFOPLIST_FILE = Flickster/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.notanalpaca.flickster;
+				PRODUCT_BUNDLE_IDENTIFIER = com.notanalpaca.Flickster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		D970A5071E3AA92D0068D026 /* Release */ = {
+		D92843B71E3AB821008E987D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = flickster/Info.plist;
+				INFOPLIST_FILE = Flickster/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.notanalpaca.flickster;
+				PRODUCT_BUNDLE_IDENTIFIER = com.notanalpaca.Flickster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -283,24 +283,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D970A4EE1E3AA92C0068D026 /* Build configuration list for PBXProject "flickster" */ = {
+		D928439E1E3AB821008E987D /* Build configuration list for PBXProject "Flickster" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D970A5031E3AA92D0068D026 /* Debug */,
-				D970A5041E3AA92D0068D026 /* Release */,
+				D92843B31E3AB821008E987D /* Debug */,
+				D92843B41E3AB821008E987D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D970A5051E3AA92D0068D026 /* Build configuration list for PBXNativeTarget "flickster" */ = {
+		D92843B51E3AB821008E987D /* Build configuration list for PBXNativeTarget "Flickster" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D970A5061E3AA92D0068D026 /* Debug */,
-				D970A5071E3AA92D0068D026 /* Release */,
+				D92843B61E3AB821008E987D /* Debug */,
+				D92843B71E3AB821008E987D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D970A4EB1E3AA92C0068D026 /* Project object */;
+	rootObject = D928439B1E3AB821008E987D /* Project object */;
 }

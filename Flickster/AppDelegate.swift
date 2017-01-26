@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  flickster
+//  Flickster
 //
 //  Created by Edwin Young on 1/26/17.
 //  Copyright © 2017 Test Org Pls Ignore. All rights reserved.
