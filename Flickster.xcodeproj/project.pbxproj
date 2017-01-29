@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3A97B4BE18DC5093A114B0A /* Pods_Flickster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1FA19774C034C5A442EE88 /* Pods_Flickster.framework */; };
 		D92843A71E3AB821008E987D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92843A61E3AB821008E987D /* AppDelegate.swift */; };
 		D92843AC1E3AB821008E987D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D92843AA1E3AB821008E987D /* Main.storyboard */; };
 		D92843AE1E3AB821008E987D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D92843AD1E3AB821008E987D /* Assets.xcassets */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C1FA19774C034C5A442EE88 /* Pods_Flickster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flickster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B9A577714B072CDA4F7073E /* Pods-Flickster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flickster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flickster/Pods-Flickster.debug.xcconfig"; sourceTree = "<group>"; };
+		C41B792F02C6AF3FB7789294 /* Pods-Flickster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flickster.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flickster/Pods-Flickster.release.xcconfig"; sourceTree = "<group>"; };
 		D92843A31E3AB821008E987D /* Flickster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flickster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D92843A61E3AB821008E987D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D92843AB1E3AB821008E987D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3A97B4BE18DC5093A114B0A /* Pods_Flickster.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5DAF8F500226A2C221FA032C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B9A577714B072CDA4F7073E /* Pods-Flickster.debug.xcconfig */,
+				C41B792F02C6AF3FB7789294 /* Pods-Flickster.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		69E6763F23CB6CF99CFEEC6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C1FA19774C034C5A442EE88 /* Pods_Flickster.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D928439A1E3AB821008E987D = {
 			isa = PBXGroup;
 			children = (
 				D92843A51E3AB821008E987D /* Flickster */,
 				D92843A41E3AB821008E987D /* Products */,
+				5DAF8F500226A2C221FA032C /* Pods */,
+				69E6763F23CB6CF99CFEEC6F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,9 +114,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D92843B51E3AB821008E987D /* Build configuration list for PBXNativeTarget "Flickster" */;
 			buildPhases = (
+				F53D4ACBBD6A7960C6CE21AC /* [CP] Check Pods Manifest.lock */,
 				D928439F1E3AB821008E987D /* Sources */,
 				D92843A01E3AB821008E987D /* Frameworks */,
 				D92843A11E3AB821008E987D /* Resources */,
+				97865AF8F93F08CE6DB5FBE1 /* [CP] Embed Pods Frameworks */,
+				3B7739C52FA2A9E705CEC0CD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,6 +176,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B7739C52FA2A9E705CEC0CD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Flickster/Pods-Flickster-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97865AF8F93F08CE6DB5FBE1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Flickster/Pods-Flickster-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F53D4ACBBD6A7960C6CE21AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D928439F1E3AB821008E987D /* Sources */ = {
@@ -276,6 +351,7 @@
 		};
 		D92843B61E3AB821008E987D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B9A577714B072CDA4F7073E /* Pods-Flickster.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Flickster/Info.plist;
@@ -289,6 +365,7 @@
 		};
 		D92843B71E3AB821008E987D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C41B792F02C6AF3FB7789294 /* Pods-Flickster.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Flickster/Info.plist;
