@@ -12,6 +12,7 @@
 		D92843AE1E3AB821008E987D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D92843AD1E3AB821008E987D /* Assets.xcassets */; };
 		D92843B11E3AB821008E987D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D92843AF1E3AB821008E987D /* LaunchScreen.storyboard */; };
 		D92843B91E3AB845008E987D /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92843B81E3AB845008E987D /* MoviesViewController.swift */; };
+		D9959A961E3D68B100C4D063 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9959A951E3D68B100C4D063 /* MovieCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		D92843B01E3AB821008E987D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D92843B21E3AB821008E987D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D92843B81E3AB845008E987D /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; tabWidth = 2; usesTabs = 1; };
+		D9959A951E3D68B100C4D063 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		D92843A51E3AB821008E987D /* Flickster */ = {
 			isa = PBXGroup;
 			children = (
+				D9959A981E3D68DE00C4D063 /* View Controllers */,
+				D9959A941E3D687900C4D063 /* Views */,
 				D92843A61E3AB821008E987D /* AppDelegate.swift */,
 				D92843AA1E3AB821008E987D /* Main.storyboard */,
 				D92843AD1E3AB821008E987D /* Assets.xcassets */,
 				D92843AF1E3AB821008E987D /* LaunchScreen.storyboard */,
 				D92843B21E3AB821008E987D /* Info.plist */,
-				D92843B81E3AB845008E987D /* MoviesViewController.swift */,
 			);
 			path = Flickster;
+			sourceTree = "<group>";
+		};
+		D9959A941E3D687900C4D063 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D9959A951E3D68B100C4D063 /* MovieCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D9959A981E3D68DE00C4D063 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D92843B81E3AB845008E987D /* MoviesViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +157,7 @@
 			files = (
 				D92843A71E3AB821008E987D /* AppDelegate.swift in Sources */,
 				D92843B91E3AB845008E987D /* MoviesViewController.swift in Sources */,
+				D9959A961E3D68B100C4D063 /* MovieCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
