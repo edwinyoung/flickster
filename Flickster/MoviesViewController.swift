@@ -12,6 +12,7 @@ import AFNetworking
 class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     
+	@IBOutlet weak var loadingView: UIView!
 	@IBOutlet weak var tableView: UITableView!
 	
 	var movies : [NSDictionary]?
@@ -34,6 +35,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
 					
 					self.movies = dataDictionary["results"] as! [NSDictionary]
 					self.tableView.reloadData()
+					self.loadingView.alpha = 0
 				}
 			}
 		}
@@ -69,13 +71,13 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
 		cell.overviewLabel.text = overview
 		cell.posterView.setImageWith(imgUrl!)
 		
-		print(imgUrl)
+		print(imgUrl!.absoluteString)
 		return cell
 	}
     
 	/*
 		// MARK: - Navigation
-     
+	
 		// In a storyboard-based application, you will often want to do a little preparation before navigation
 		override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 			// Get the new view controller using segue.destinationViewController.
