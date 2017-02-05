@@ -14,6 +14,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     
 	@IBOutlet weak var loadingView: UIView!
 	@IBOutlet weak var tableView: UITableView!
+	@IBOutlet weak var splashLoading: UIActivityIndicatorView!
 	
 	var movies : [NSDictionary]?
 	
@@ -21,6 +22,14 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
 		super.viewDidLoad()
 		
 		// Do any additional setup after loading the view.
+		self.splashLoading.startAnimating()
+		
+		// Initialize a UIRefreshControl
+		let refreshControl = UIRefreshControl()
+		refreshControl.addTarget(self, action: #selector(refreshControlAction(_:)), for: UIControlEvents.valueChanged)
+		// add refresh control to table view
+		tableView.insertSubview(refreshControl, at: 0)
+		
 		tableView.dataSource = self
 		tableView.delegate = self
 		
@@ -35,6 +44,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
 					
 					self.movies = dataDictionary["results"] as! [NSDictionary]
 					self.tableView.reloadData()
+					self.splashLoading.stopAnimating()
 					self.loadingView.alpha = 0
 				}
 			}
@@ -74,7 +84,40 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
 		print(imgUrl!.absoluteString)
 		return cell
 	}
-    
+	
+	// Makes a network request to get updated data
+	// Updates the tableView with the new data
+	// Hides the RefreshControl
+	func refreshControlAction(_ refreshControl: UIRefreshControl) {
+		
+		// ... Create the URLRequest ...
+		let apiKey = "8c196c3c0b660eff61aa8b14f87d402e"
+		let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=\(apiKey)")!
+		let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
+		
+		// Configure session so that completion handler is executed on main UI thread
+		let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
+		let task: URLSessionDataTask = session.dataTask(with: request) { (data: Data?, response: URLResponse?, error: Error?) in
+			
+			// ... Use the new data to update the data source ...
+			if let data = data {
+				if let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as? NSDictionary {
+					print(dataDictionary)
+					
+					self.movies = dataDictionary["results"] as! [NSDictionary]
+					self.tableView.reloadData()
+				}
+			}
+			
+			// Reload the tableView now that there is new data
+			self.tableView.reloadData()
+			
+			// Tell the refreshControl to stop spinning
+			refreshControl.endRefreshing()
+		}
+		task.resume()
+	}
+	
 	/*
 		// MARK: - Navigation
 	
