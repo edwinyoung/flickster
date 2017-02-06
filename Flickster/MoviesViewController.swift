@@ -71,17 +71,16 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
 		let movie = movies![indexPath.row]
 		let title = movie["title"] as! String
 		let overview = movie["overview"] as! String
-		let posterPath = movie["poster_path"] as! String
-		
-		let baseImgUrl = "https://image.tmdb.org/t/p/w500"
-		
-		let imgUrl = URL(string: baseImgUrl + posterPath)
 		
 		cell.titleLabel.text = title
 		cell.overviewLabel.text = overview
-		cell.posterView.setImageWith(imgUrl!)
 		
-		print(imgUrl!.absoluteString)
+		if let posterPath = movie["poster_path"] as? String {
+			let baseImgUrl = "https://image.tmdb.org/t/p/w500"
+			let imgUrl = URL(string: baseImgUrl + posterPath)
+			cell.posterView.setImageWith(imgUrl!)
+			print(imgUrl?.absoluteString)
+		}
 		return cell
 	}
 	
@@ -127,5 +126,17 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
 			// Pass the selected object to the new view controller.
 		}
 	*/
-    
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		let cell = sender as! UITableViewCell
+		let indexPath = tableView.indexPath(for: cell)
+		let movie = movies![indexPath!.row]
+		
+		let detailViewController = segue.destination as! DetailViewController
+		detailViewController.movie = movie
+		
+		// Get the new view controller using segue.destinationViewController.
+		// Pass the selected object to the new view controller.
+		
+	}
+	
 }
