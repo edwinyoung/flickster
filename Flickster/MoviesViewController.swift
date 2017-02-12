@@ -17,6 +17,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
 	@IBOutlet weak var splashLoading: UIActivityIndicatorView!
 	
 	var movies : [NSDictionary]?
+	var endpoint : String!
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -34,7 +35,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
 		tableView.delegate = self
 		
 		let apiKey = "8c196c3c0b660eff61aa8b14f87d402e"
-		let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=\(apiKey)")!
+		let url = URL(string: "https://api.themoviedb.org/3/movie/\(endpoint!)?api_key=\(apiKey)")!
 		let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
 		let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
 		let task: URLSessionDataTask = session.dataTask(with: request) { (data: Data?, response: URLResponse?, error: Error?) in
