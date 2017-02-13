@@ -76,6 +76,10 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
 		cell.titleLabel.text = title
 		cell.overviewLabel.text = overview
 		
+		let backgroundView = UIView()
+		backgroundView.backgroundColor = UIColor.blue
+		cell.selectedBackgroundView = backgroundView
+		
 		if let posterPath = movie["poster_path"] as? String {
 			let baseImgUrl = "https://image.tmdb.org/t/p/w500"
 			let imgUrl = URL(string: baseImgUrl + posterPath)
